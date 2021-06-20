@@ -1,0 +1,143 @@
+.pay-container {
+  padding-top: 39px;
+}
+.pay-title {
+  font-family: Days One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 61px;
+  text-align: center;
+
+  color: #faf0e6;
+  position: relative;
+
+  margin-bottom: 147px;
+  animation: neon 15s infinite;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 171px;
+    height: 40px;
+    bottom: -20px;
+    right: 637px;
+    background-image: url("./../../../images/right.svg");
+  }
+}
+
+.pay-title_h3 {
+  font-family: Sansation;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 34px;
+  /* identical to box height */
+  text-align: center;
+  color: #faf0e6;
+  margin: 0;
+  padding-bottom: 33px;
+}
+.pay-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+
+  color: #c1bfc3;
+  width: 260px;
+  padding-left: 55px;
+  margin: 0;
+}
+@keyframes neon {
+  0% {
+    color: rgb(105, 105, 241);
+  }
+  25% {
+    transform: rotate(45deg);
+  }
+  50% {
+    color: red;
+    transform: rotate(-45deg);
+  }
+  75% {
+    color: green;
+  }
+  100% {
+    color: #ac3e94;
+  }
+}
+
+.pay-title::before {
+  content: "";
+  position: absolute;
+  width: 171px;
+  height: 40px;
+  top: -20px;
+  left: 640px;
+  background-image: url("./../../../images/left.svg");
+}
+.pay-list {
+  display: flex;
+  list-style: none;
+  padding-left: 139px;
+  margin: 0;
+}
+.pay-item {
+  width: 318px;
+  height: 509px;
+  background-color: rgba(146, 146, 146, 0.2);
+  backdrop-filter: blur(6px);
+  margin-right: 40px;
+
+  backdrop-filter: blur(6px);
+  transition: filter 450ms cubic-bezier(0.445, 0.05, 0.55, 0.95),
+    border 450ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+
+  &:hover,
+  &:focus {
+    border: 1px solid #e761ca;
+    filter: drop-shadow(0px 0px 15px #f09bdd);
+  }
+}
+.pay-item:nth-child(4n) {
+  margin-right: 0;
+}
+.pay-img {
+  height: 150px;
+  padding-top: 60px;
+  padding-left: 84px;
+  margin: 0;
+}
+.pay-button {
+  font-family: Sansation;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 27px;
+
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+
+  width: 252px;
+  height: 55px;
+
+  background: #ac3e94;
+  border: 3px solid #ac3e94;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 15px #ac3e94;
+  border-radius: 70px;
+  margin-top: 120px;
+  margin-bottom: 102px;
+  margin-left: 714px;
+  transition: filter 450ms cubic-bezier(0.445, 0.05, 0.55, 0.95),
+    font-size 450ms cubic-bezier(0.445, 0.05, 0.55, 0.95),
+    border 450ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+.pay-button:focus,
+.pay-button:hover {
+  filter: drop-shadow(5px 5px 45px #ac3e94);
+  font-size: 26px;
+}

@@ -1,0 +1,148 @@
+.container-hero {
+  display: flex;
+  padding-bottom: 184px;
+}
+.hero-container {
+  position: relative;
+
+  width: 840px;
+
+  margin: 0;
+  // padding-bottom: 276px;
+}
+
+.hero-titl {
+  position: relative;
+  font-family: Days One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 1.27;
+  z-index: 1;
+  color: #faf0e6;
+  margin-top: 187px;
+  margin-left: 154px;
+  margin-bottom: 0;
+}
+
+.hero-spam {
+  // color: #e761ca;
+  animation: neon 15s infinite;
+}
+@keyframes neon {
+  0% {
+    color: rgb(105, 105, 241);
+  }
+  25% {
+    transform: rotate(45deg);
+  }
+  50% {
+    color: red;
+    transform: rotate(-45deg);
+  }
+  75% {
+    color: green;
+  }
+  100% {
+    color: #ac3e94;
+  }
+}
+
+.hero-spam:hover {
+  filter: drop-shadow(0px 0px 15px #ac3e94);
+}
+.hero-text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 1.2;
+
+  color: #dddcdb;
+
+  margin-top: 35px;
+  margin-left: 154px;
+  margin-bottom: 0;
+}
+.hero-text_spam {
+  margin-top: 35px;
+}
+
+.hero-button {
+  font-family: Sansation;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 1.125;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: #ffffff;
+
+  width: 340px;
+  height: 55px;
+  border: 3px solid #ac3e94;
+  filter: drop-shadow(0px 0px 15px #ac3e94);
+  border-radius: 70px;
+  background-color: black;
+  margin-left: 154px;
+  margin-top: 66px;
+  transition: filter 450ms cubic-bezier(0.445, 0.05, 0.55, 0.95),
+    font-size 450ms cubic-bezier(0.445, 0.05, 0.55, 0.95),
+    background 450ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+.hero-button:focus,
+.hero-button:hover {
+  filter: drop-shadow(5px 5px 45px #ac3e94);
+
+  font-size: 26px;
+  background: #ac3e94;
+}
+.hero-button_order {
+  font-family: Sansation;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 1.125;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: #ffffff;
+
+  width: 252px;
+  height: 55px;
+  background: #ac3e94;
+  border: 3px solid #ac3e94;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 15px #ac3e94;
+  border-radius: 70px;
+  margin-left: 80px;
+  transition: filter 450ms cubic-bezier(0.445, 0.05, 0.55, 0.95),
+    font-size 450ms cubic-bezier(0.445, 0.05, 0.55, 0.95),
+    background 450ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.hero-button_order:focus,
+.hero-button_order:hover {
+  filter: drop-shadow(5px 5px 45px #ac3e94);
+  font-size: 26px;
+  background-color: black;
+}
+.hero-img {
+  display: flex;
+  margin-left: 186px;
+  margin-top: 100px;
+  box-shadow: 0px 0px 16px 8px #28052f;
+}
+
+.container-hero::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 34.4px;
+  bottom: 0;
+  left: 50%;
+  // border: 2px solid tomato;
+  background-size: contain;
+  background-image: url("../images/instagram.svg");
+}
