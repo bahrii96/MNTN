@@ -13,7 +13,7 @@
   position: relative;
 
   margin-bottom: 147px;
-  animation: neon 15s infinite;
+  // animation: neon 15s infinite;
   &::after {
     content: "";
     position: absolute;
@@ -50,24 +50,6 @@
   padding-left: 55px;
   margin: 0;
 }
-@keyframes neon {
-  0% {
-    color: rgb(105, 105, 241);
-  }
-  25% {
-    transform: rotate(45deg);
-  }
-  50% {
-    color: red;
-    transform: rotate(-45deg);
-  }
-  75% {
-    color: green;
-  }
-  100% {
-    color: #ac3e94;
-  }
-}
 
 .pay-title::before {
   content: "";
@@ -90,7 +72,6 @@
   background-color: rgba(146, 146, 146, 0.2);
   backdrop-filter: blur(6px);
   margin-right: 40px;
-
   backdrop-filter: blur(6px);
   transition: filter 450ms cubic-bezier(0.445, 0.05, 0.55, 0.95),
     border 450ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
@@ -104,11 +85,41 @@
 .pay-item:nth-child(4n) {
   margin-right: 0;
 }
-.pay-img {
+
+.pay-box-back {
+  width: 150px;
   height: 150px;
-  padding-top: 60px;
-  padding-left: 84px;
-  margin: 0;
+  border-radius: 150px;
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  margin-top: 60px;
+  margin-bottom: 30px;
+  margin-left: 84px;
+}
+.pay-img_green {
+  background: linear-gradient(45deg, #2c613e 0%, #0bda51 100%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 150px;
+}
+.pay-img_yellow {
+  background: linear-gradient(45deg, #612f2c 0%, #da870b 100%);
+  box-shadow: 0px 0px 8px #da870b;
+  border-radius: 150px;
+}
+
+.pay-img_pink {
+  background: linear-gradient(45deg, #612c4f 0%, #da0b6e 100%);
+  box-shadow: 0px 0px 8px #da0b6e;
+  border-radius: 150px;
+}
+.pay-img_blue {
+  background: linear-gradient(45deg, #562c61 0%, #410bda 100%);
+  box-shadow: 0px 0px 8px #3b1cff;
+  border-radius: 150px;
 }
 .pay-button {
   font-family: Sansation;
@@ -136,8 +147,9 @@
     font-size 450ms cubic-bezier(0.445, 0.05, 0.55, 0.95),
     border 450ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
+
 .pay-button:focus,
 .pay-button:hover {
   filter: drop-shadow(5px 5px 45px #ac3e94);
-  font-size: 26px;
+  //  font-size: 26px;
 }

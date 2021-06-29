@@ -135,14 +135,17 @@
   box-shadow: 0px 0px 16px 8px #28052f;
 }
 
-.container-hero::before {
+.hero-container::before {
   content: "";
   position: absolute;
   width: 25px;
   height: 34.4px;
-  bottom: 0;
-  left: 50%;
+  top: 805px;
+  left: 803px;
   // border: 2px solid tomato;
   background-size: contain;
-  background-image: url("../images/instagram.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("./../../images/transition.svg");
 }

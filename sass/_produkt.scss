@@ -5,9 +5,10 @@
 }
 .box-img {
   position: relative;
+  // z-index: 1;
 }
 .box-img::before {
-  z-index: 1;
+  z-index: 0;
   position: absolute;
   content: "";
   left: 485px;
@@ -20,7 +21,10 @@
   animation: circle-rotate 100s infinite;
   background-image: url("./../../images/neon.svg");
 }
-
+.produkt-img {
+  position: relative;
+  z-index: 1;
+}
 @keyframes circle-rotate {
   from {
     transform: rotate(360deg);
