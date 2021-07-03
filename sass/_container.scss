@@ -1,8 +1,13 @@
 .container {
-  width: 1650px;
+  max-width: 1430px;
   padding-left: 15px;
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
+  // @media screen and (max-width: 499px) {
+  //   max-width: 469px;
+  // }
+}
+body {
   background-color: black;
 }

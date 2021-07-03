@@ -1,6 +1,8 @@
 .container-produkt {
   display: flex;
+  justify-content: space-between;
   padding: 0;
+  padding-bottom: 154px;
   // position: relative;
 }
 .box-img {
@@ -11,7 +13,7 @@
   z-index: 0;
   position: absolute;
   content: "";
-  left: 485px;
+  left: 331px;
 
   top: 140px;
   width: 300px;
@@ -32,8 +34,8 @@
 }
 .produkt-img {
   // display: inline-block;
-  margin: 270px;
-  margin-left: 154px;
+  margin-top: 270px;
+  // margin-left: 154px;
 }
 
 .produkt-container {

@@ -19,12 +19,14 @@ ul {
 }
 .portfolio-item {
   position: relative;
-  margin-left: 122px;
+  // margin-left: 122px;
   overflow: hidden;
 
   // justify-content: center;
 }
-
+.portfolio-item:nth-child(n + 2) {
+  margin-left: 122px;
+}
 .portfolio-card {
   position: absolute;
   //   width: 246px;
@@ -59,13 +61,18 @@ ul {
   color: #faf0e6;
   width: 246px;
   height: 187px;
-
-  margin-left: 70px;
+  // align-items: center;
+  // margin-left: 70px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0;
   margin-bottom: 0;
 }
 .portfolio-item_img {
-  margin-left: 155px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0;
   margin-top: 0;
 }
@@ -97,7 +104,10 @@ ul {
   background-color: black;
   margin-top: 153px;
   margin-bottom: 80px;
-  margin-left: 670px;
+  // margin-left: 670px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   transition: filter 450ms cubic-bezier(0.445, 0.05, 0.55, 0.95),
     font-size 450ms cubic-bezier(0.445, 0.05, 0.55, 0.95),
     border 450ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
