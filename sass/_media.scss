@@ -239,7 +239,8 @@
   }
 
   .produkt-button {
-    width: 370px;
+    width: 75%;
+    height: 20%;
   }
   .portfolio-item:nth-child(3) {
     display: none;
@@ -248,8 +249,8 @@
     // display: block;
     // justify-content: space-around;
     width: 230px;
-    height: 250px;
-    margin: 10px;
+    height: 270px;
+    margin: 15px;
   }
   .pay-box-back {
     display: none;
@@ -282,6 +283,34 @@
     display: inline-block;
     padding-right: 10px;
   }
+  .hero-button_order:focus,
+  .hero-button_order:hover {
+    font-size: 21px;
+  }
+  .hero-button:focus,
+  .hero-button:hover {
+    font-size: 21px;
+  }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 450px) {
+  .header-button {
+    display: flex;
+  }
+  .header-item {
+    display: none;
+  }
+  .header-item_hed {
+    display: none;
+  }
+  .header-img {
+    padding: 0;
+    width: 150px;
+  }
+  .logo {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    // text-align: center;
+  }
 }
