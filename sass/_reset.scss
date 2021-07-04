@@ -7,7 +7,9 @@ html {
 *::before {
   box-sizing: inherit;
 }
-
+body {
+  overflow-x: hidden;
+}
 // body,
 // h1,
 // h2,

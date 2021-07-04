@@ -9,6 +9,7 @@
 
 .footer-list {
   display: flex;
+  // flex-wrap: wrap;
   // margin: 0;
   justify-content: space-between;
   padding-bottom: 145px;
@@ -23,7 +24,7 @@
   //   display: inline-block;
   padding-right: 32px;
   padding-top: 15px;
-  position: relative;
+  // position: relative;
 }
 .footer-box {
   display: flex;
