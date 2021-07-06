@@ -1249,6 +1249,10 @@ ul {
   background-image: url("./../../images/exit_form.svg");
 }
 
+.is-open {
+  display: none;
+}
+
 @media screen and (max-width: 1350px) {
   .header-item:nth-child(2) {
     -webkit-box-align: center;
