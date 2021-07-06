@@ -201,10 +201,16 @@
   background-image: url("./../../images/exit_form.svg");
 }
 
-body.form-open {
-  overflow: hidden;
-  .form {
-    transform: translate(-50%, -50%);
-    opacity: 1;
-  }
-}
+// body.form-open {
+//   overflow: hidden;
+//   .form {
+//     transform: translate(-50%, -50%);
+//     opacity: 1;
+//   }
+// }
+// .is-open {
+//   display: none;
+// }
+// .hero-button_order.hero-button_order:focus ~ .is-open {
+//   display: block;
+// }

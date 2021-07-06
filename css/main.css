@@ -818,7 +818,6 @@ ul {
 
 .pay-title_box {
   display: block;
-  position: relative;
 }
 
 .pay-title {
@@ -829,17 +828,8 @@ ul {
   line-height: 61px;
   text-align: center;
   color: #faf0e6;
+  position: relative;
   margin-bottom: 147px;
-}
-
-.pay-title::after {
-  content: "";
-  position: absolute;
-  width: 171px;
-  height: 40px;
-  bottom: -20px;
-  right: 537px;
-  background-image: url("./../../../images/right.svg");
 }
 
 .pay-title_h3 {
@@ -865,16 +855,6 @@ ul {
   color: #c1bfc3;
   width: 260px;
   margin: 0 auto;
-}
-
-.pay-title::before {
-  content: "";
-  position: absolute;
-  width: 171px;
-  height: 40px;
-  top: -20px;
-  left: 640px;
-  background-image: url("./../../../images/left.svg");
 }
 
 .pay-list {
@@ -1267,16 +1247,6 @@ ul {
   background-size: cover;
   background-position: center;
   background-image: url("./../../images/exit_form.svg");
-}
-
-body.form-open {
-  overflow: hidden;
-}
-
-body.form-open .form {
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  opacity: 1;
 }
 
 @media screen and (max-width: 1350px) {

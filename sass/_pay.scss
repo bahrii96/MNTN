@@ -1,9 +1,10 @@
 .pay-container {
   padding-top: 39px;
+  // position: relative;
 }
 .pay-title_box {
   display: block;
-  position: relative;
+  // position: relative;
 }
 .pay-title {
   font-family: Days One;
@@ -14,19 +15,19 @@
   text-align: center;
 
   color: #faf0e6;
-  // position: relative;
+  position: relative;
 
   margin-bottom: 147px;
   // animation: neon 15s infinite;
-  &::after {
-    content: "";
-    position: absolute;
-    width: 171px;
-    height: 40px;
-    bottom: -20px;
-    right: 537px;
-    background-image: url("./../../../images/right.svg");
-  }
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   width: 171px;
+  //   height: 40px;
+  //   bottom: -20px;
+  //   right: 537px;
+  //   background-image: url("./../../../images/right.svg");
+  // }
 }
 
 .pay-title_h3 {
@@ -55,15 +56,15 @@
   margin: 0 auto;
 }
 
-.pay-title::before {
-  content: "";
-  position: absolute;
-  width: 171px;
-  height: 40px;
-  top: -20px;
-  left: 640px;
-  background-image: url("./../../../images/left.svg");
-}
+// .pay-title::before {
+//   content: "";
+//   position: absolute;
+//   max-width: 171px;
+//   height: 40px;
+//   top: -20px;
+//   left: 640px;
+//   background-image: url("./../../../images/left.svg");
+// }
 .pay-list {
   display: flex;
   flex-wrap: wrap;
